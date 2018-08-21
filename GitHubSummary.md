@@ -2,7 +2,7 @@
 **Git 常用命令总结**
 
  1. 初始化
-     `git init`
+    <br/> `git init`
  2. 查看当前仓库状态
     `git status`
  3. 向本地仓库提交文件
