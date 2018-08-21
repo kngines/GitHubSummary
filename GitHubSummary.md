@@ -1,4 +1,4 @@
-﻿# GitHub Summary
+# GitHub Summary
 **Git 常用命令总结**
 
  1. 初始化:&nbsp;
@@ -49,3 +49,30 @@
     `git grep 查询文本` 
  24. 针对版本查询字符串:&nbsp;
     `git grep 查询文本 v1.0` 
+    
+---
+
+**创建 GitHub 公钥**
+ 1. 改变链接方式[HTTP -> SSH]:&nbsp;
+    
+    `git remote rm origin`
+    <br/>`git remote add origin git@github.com:username/respository.git`
+ 
+ 2. 创建新的SSH Key:&nbsp;
+    
+    `cd ~/.ssh`
+    <br/>`ssh-keygen`
+   
+ 3. 测试链接（权限拒绝）:&nbsp;
+    
+    `ssh -T -v git@github.com`
+   
+ 4. 向github添加公钥:&nbsp;
+    
+    利用 ~/.ssh/id_rsa.pub 内容在 https://github.com/settings/profile 建立 SSH Key.
+    
+  5. 测试结果
+    <br/>`ssh -T git@github.com`
+    <br/>提示 : `You've successfully authenticated, but GitHub does not provide shell access.`
+    
+    
