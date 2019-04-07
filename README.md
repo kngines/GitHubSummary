@@ -1,6 +1,44 @@
 ## GitHubTips
 ### GitHub开发常用
 
+- 配置用户信息
+	
+		git config --global user.name "kngines"
+		git config --global user.email "kngines@163.com"
+
+- 开启SSH服务
+	
+		apt-get install ssh # Ubuntu 安装 SSH
+		yum install ssh 	# CentOS 安装 SSH
+		ps -e | grep sshd 	# 查看 SSH 服务状态
+
+- 生成 SSH Key
+	
+		ssh-keygen -t rsa -C "kngines@163.com"
+
+- 克隆仓库到本地
+
+		git clone git@github.com:kngines/jupyter-analysis-ipynb.git
+
+- 向本地仓库提交文件
+
+		git add .
+
+- 提交到远程仓库并附加注释
+
+		git commit -m "update some files"
+
+- 推送到主分支
+
+		git push -u origin master
+
+		git push git@github.com:kngines/jupyter-analysis-ipynb.git
+
+- 添加远程仓库
+
+		git remote add origin git@github.com:username/respository.git
+
+
 
 ### Github基础命令
 - 初始化
