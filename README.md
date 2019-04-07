@@ -39,6 +39,23 @@
 		git remote add origin git@github.com:username/respository.git
 
 
+- 测试成功
+
+		ssh -T git@github.com # 提示 : `You've successfully authenticated, but GitHub does not provide shell access.
+
+- 查看git全局配置
+	
+		git config --global -e
+
+- 配置ss代理. 通过socks5协议走ss通道
+		
+		git config --global http.proxy 'socks5://127.0.0.1:1080'
+		git config --global https.proxy 'socks5://127.0.0.1:1080'
+
+- 取消ss代理配置
+
+		git config --global --unset http.proxy
+		git config --global --unset https.proxy
 
 ### Github基础命令
 - 初始化
